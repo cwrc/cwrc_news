@@ -30,6 +30,12 @@ function cwrc_news_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'homepage_slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -78,6 +84,12 @@ function cwrc_news_field_default_field_instances() {
         'weight' => -1,
       ),
       'featured_carousel' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'homepage_slider' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -155,6 +167,12 @@ function cwrc_news_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'homepage_slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'module' => 'taxonomy',
@@ -196,6 +214,12 @@ function cwrc_news_field_default_field_instances() {
         'weight' => 11,
       ),
       'featured_carousel' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'homepage_slider' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
