@@ -78,7 +78,7 @@ function cwrc_news_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'large',
+          'image_style' => 'event_img',
         ),
         'type' => 'image',
         'weight' => -1,
@@ -155,7 +155,7 @@ function cwrc_news_field_default_field_instances() {
     'description' => 'Enter a comma-separated list of words to describe your content.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',

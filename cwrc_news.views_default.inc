@@ -202,7 +202,7 @@ function cwrc_news_views_default_views() {
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '300',
+    'trim_length' => '200',
   );
   $handler->display->display_options['fields']['body']['field_api_classes'] = TRUE;
   /* Field: Content: Link */
@@ -268,9 +268,8 @@ function cwrc_news_views_default_views() {
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = '';
-  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'start_date_full';
+  $handler->display->display_options['fields']['created']['label'] = 'Posted';
+  $handler->display->display_options['fields']['created']['date_format'] = 'privatemsg_years';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'html5_tools_iso8601';
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
@@ -284,7 +283,7 @@ function cwrc_news_views_default_views() {
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '300',
+    'trim_length' => '200',
   );
   $handler->display->display_options['fields']['body']['field_api_classes'] = TRUE;
   /* Field: Content: Link */
