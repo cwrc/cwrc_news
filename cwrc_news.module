@@ -5,3 +5,43 @@
  */
 
 include_once 'cwrc_news.features.inc';
+
+/**
+ * Implements hook_node_view().
+ */
+function cwrc_news_node_view($node, $view_mode, $langcode) {
+  if ($view_mode == 'full'
+  && empty($node->field_image)
+  && ($node->type == 'article')) {
+    $item = array(
+      'uri' =>  drupal_get_path('theme', 'de_theme') . '/img/news-default-lrg.png',
+      'type' => 'image',
+      'alt' => $node->title,
+      'height' => 210,
+      'width' => 325,
+    );
+    $node->content['field_image'] = array(
+      '#theme' => 'field',
+      '#weight' => -1,
+      '#title' => 'Image',
+      '#access' => TRUE,
+      '#label_display' => 'hidden',
+      '#view_mode' => 'full',
+      '#language' => 'und',
+      '#field_name' =>  'field_image',
+      '#field_type' => 'image',
+      '#field_translatable' => '0',
+      '#entity_type' => 'node',
+      '#bundle' => 'event',
+      '#object' => $node,
+      '#items' => array($item),
+      '#formatter' => 'image',
+      '0' => array(
+        '#theme' => 'image_formatter',
+        '#item' => $item,
+        '#image_style' => null,
+        '#path' => '',
+      ),
+    );
+  }
+}
