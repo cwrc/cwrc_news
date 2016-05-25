@@ -1,4 +1,4 @@
-name = CWRC News
+name = CWRC: News Content Type
 core = 7.x
 package = CWRC Content Types
 version = 7.x-1.0
