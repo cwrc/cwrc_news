@@ -89,10 +89,11 @@ function cwrc_news_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_class'] = 'read-more-link';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Read More';
-  /* Sort criterion: Content: Date and time -  start date (field_event_date) */
-  $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
-  $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
-  $handler->display->display_options['sorts']['field_event_date_value']['field'] = 'field_event_date_value';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -214,10 +215,11 @@ function cwrc_news_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Read More';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Date and time -  start date (field_event_date) */
-  $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
-  $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
-  $handler->display->display_options['sorts']['field_event_date_value']['field'] = 'field_event_date_value';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
