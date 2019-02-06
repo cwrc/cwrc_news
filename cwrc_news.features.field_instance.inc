@@ -10,7 +10,7 @@
 function cwrc_news_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-body'
+  // Exported field_instance: 'node-article-body'.
   $field_instances['node-article-body'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -67,7 +67,7 @@ function cwrc_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_image'
+  // Exported field_instance: 'node-article-field_image'.
   $field_instances['node-article-field_image'] = array(
     'bundle' => 'article',
     'deleted' => 0,
@@ -147,7 +147,7 @@ function cwrc_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_tags'
+  // Exported field_instance: 'node-article-field_tags'.
   $field_instances['node-article-field_tags'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -200,7 +200,7 @@ function cwrc_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-title_field'
+  // Exported field_instance: 'node-article-title_field'.
   $field_instances['node-article-title_field'] = array(
     'bundle' => 'article',
     'default_value' => NULL,

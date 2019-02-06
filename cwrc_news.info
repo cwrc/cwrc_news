@@ -5,6 +5,7 @@ version = 7.x-1.0
 project = cwrc_news
 dependencies[] = borealis_sb
 dependencies[] = ctools
+dependencies[] = cwrc_baseline
 dependencies[] = cwrc_components
 dependencies[] = fe_block
 dependencies[] = features
